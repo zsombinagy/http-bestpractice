@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <input type="text" id="min" placeholder="min" />
+    <input type="text" id="max" placeholder="max" />
+    <button id="search">Search</button>
+    <div class="post">
+      <input type="text" id="country_name_input" placeholder="country name" />
+      <input
+        type="number"
+        id="country_population_input"
+        placeholder="population"
+      />
+      <button id="post_request">Send</button>
+    </div>
+    <div
+      id="country_list"
+      class="text-xl font-bold bg-rose-100 w-fit flex-row rounded-lg p-5 space-y-5"
+    ></div>
+    <div id="updateInputsDiv" class="hidden absolute z-10 inset-0 bg-primary justify-center items-center">
+      <div class="p-4 bg-secondary border-info">
+        <input type="text" class="updateInput" id="updateNameInput" />
+        <input type="text" class="updateInput" id="updatePopulationInput" />
+        <button id="saveButton" class="btn btn-success">Save</button>
+        <button id="cancelButton" class="btn btn-error">Cancel</button>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
